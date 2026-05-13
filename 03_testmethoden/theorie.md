@@ -113,6 +113,15 @@ Der Black-Box-Ansatz hätte den Negativwert-Zweig möglicherweise übersehen –
 
 ---
 
+### 🎮 Lernkarten & Wiederholung
+- 📦 [Alle Lernkarten LS 8.5 – Quizlet Ordner](https://quizlet.com/user/A__J_35/folders/ls-85-softwaretests?i=20ii9u&x=1xqt)
+- 🃏 [Quizlet – Baustein 03: Testmethoden](https://quizlet.com/de/1179918735/03-testmethoden-flash-cards/?i=20ii9u&x=1jqt)
+
+> Nutze die Lernkarten zur Wiederholung nach dem Baustein – 
+> ideal für Spaced Repetition und IHK-Vorbereitung!
+
+---
+
 ## Was kommt als nächstes?
 
 In **Baustein 04 – Äquivalenzklassen & Grenzwertanalyse** vertiefst du die Black-Box-Methode. Du lernst, wie man aus unendlich vielen möglichen Eingaben systematisch eine kleine, aber aussagekräftige Menge an Testfällen ableitet – eine der wichtigsten Techniken für die IHK-Prüfung.

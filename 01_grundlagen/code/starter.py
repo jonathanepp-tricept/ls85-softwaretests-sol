@@ -23,13 +23,16 @@ def berechne_rabatt(preis: float, prozent: float) -> float:
 # Aufgabe 1a): Beantworte folgende Fragen als Kommentar:
 
 # Error (falsche Handlung des Entwicklers):
-# TODO: Deine Antwort hier
+# TODO: Deine Antwort hier 
+#Der Entwickler hat den Rabatt falsch berechnet, indem er den Prozentsatz direkt mit dem Preis multipliziert hat, anstatt den Prozentsatz durch 100 zu teilen.
 
 # Defect (fehlerhafte Stelle im Code):
 # TODO: Deine Antwort hier
+#Der Defekt ist in Zeile 19 wp preis * prozent genommen wird.
 
 # Failure (was der Benutzer bemerken würde):
 # TODO: Deine Antwort hier
+#Der Rabat wird viel zu hoch berechnet, der Preis stimmt am ende nicht
 
 
 # Aufgabe 1b): Korrigiere die Funktion unten und füge print()-Tests hinzu.
@@ -52,6 +55,15 @@ if __name__ == "__main__":
 
     print("\n=== Test: berechne_rabatt_korrigiert ===")
     # TODO: Deine Tests hier
+    if berechne_rabatt_korrigiert(100.0, 20) == 80.0:
+        print("Test 1 bestanden")
+    else:
+        print("Test 1 fehlgeschlagen. Erwartetes Ergebnis: 80.0, tatsächliches Ergebnis:", berechne_rabatt_korrigiert(100.0, 20))
+
+    if berechne_rabatt_korrigiert(64.0, 30) == 44.8:
+        print("Test 2 bestanden")
+    else:
+        print("Test 2 fehlgeschlagen. Erwartetes Ergebnis: 44.8, tatsächliches Ergebnis:", berechne_rabatt_korrigiert(64.0, 30))
 
 
 # ============================================================
@@ -62,15 +74,16 @@ if __name__ == "__main__":
 #
 # | Maßnahme                            | Statisch | Dynamisch |
 # |-------------------------------------|----------|-----------|
-# | Code Review durch einen Kollegen    | TODO     | TODO      |
-# | Programm mit Testdaten ausführen    | TODO     | TODO      |
-# | Syntaxprüfung durch den Editor      | TODO     | TODO      |
-# | Walkthroughs im Team                | TODO     | TODO      |
-# | Unit-Tests laufen lassen            | TODO     | TODO      |
-# | Checklisten für Codestruktur        | TODO     | TODO      |
+# | Code Review durch einen Kollegen    | X        |           |
+# | Programm mit Testdaten ausführen    |          | X         |
+# | Syntaxprüfung durch den Editor      | X        |           |
+# | Walkthroughs im Team                | X        |           |
+# | Unit-Tests laufen lassen            |          | X         |
+# | Checklisten für Codestruktur        | X        |           |
 #
 # Warum reicht statisches Testen allein nicht aus?
 # TODO: Deine Erklärung hier (2 Sätze)
+# Statische Tests dauern oft länger, da sie manuell durchgeführt werden müssen. Außerdem können nicht alle Fehler gefunden werden wenn das Programm nicht ausgeführt wird.
 
 
 # ============================================================
@@ -80,10 +93,13 @@ if __name__ == "__main__":
 # Prinzip 2 – Vollständiges Testen ist unmöglich:
 # Beispiel aus dem Berufsalltag:
 # TODO: Deine Antwort hier
+# Es gibt unendlich viele mögliche Eingaben, Kombinationen und Pfade in einem Programm, daher ist es unmöglich, alle möglichen Szenarien zu testen.
 
 # Prinzip 4 – Defect Clustering:
 # Beispiel aus dem Berufsalltag:
 # TODO: Deine Antwort hier
+# In einem Softwareprojekt treten Fehler oft in bestimmten Modulen oder Komponenten auf, während andere Teile des Codes relativ fehlerfrei bleiben. Zum Beispiel könnte ein bestimmtes Feature oder eine Funktion besonders fehleranfällig sein, während der Rest des Systems stabil ist.
 
 # Welches Prinzip überrascht dich? Warum?
 # TODO: Deine Antwort hier
+# Defect Clustering überrascht mich, Fehler können ja überall auftreten, warum sollten sie sich clustern?
